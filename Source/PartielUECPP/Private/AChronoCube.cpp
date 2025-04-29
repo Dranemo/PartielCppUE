@@ -58,7 +58,7 @@ void AAChronoCube::Tick(float DeltaTime)
 		timer -= DeltaTime;
 
 		if(material)
-			material->SetVectorParameterValue("BaseColor", colors[timer]);
+			material->SetVectorParameterValue("BaseColor", colors[timer - 1]);
 	}
 }
 
